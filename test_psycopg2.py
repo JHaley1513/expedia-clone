@@ -1,13 +1,13 @@
 import psycopg2
-
+from my_credentials import db_cred
 
 def connect_db():
-    db_list = ['psycopg2_test', 'jonhaley', 'postgres', 'template1']
+    db_list = ['expedia_clone', 'psycopg2_test', 'jonhaley', 'postgres', 'template1']
     conn = None
 
     for db in db_list:
         try:
-            conn = psycopg2.connect(f'dbname={db} user=postgres password=53144169')
+            conn = psycopg2.connect(f'dbname={db} user={db_cred.username} password={db_cred.password}')
         except (Exception, psycopg2.DatabaseError) as error:
             print(error)
         else:

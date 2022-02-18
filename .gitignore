@@ -1,6 +1,7 @@
 exp_env/
 exp_env2/
 .DS_Store
+my_credentials.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
