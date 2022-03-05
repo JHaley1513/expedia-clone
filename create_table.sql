@@ -24,7 +24,40 @@ create table airport(
   iso_country char(2) not null,
   iso_region varchar(8), /* state or province */
   municipality varchar(30),
-  iata_code varchar(5),
+  iata_code varchar(3),
+  icao_code varchar(4), /* "local code" */
   keywords varchar(70),
   primary key (iata_code)
+);
+
+create table airline(
+
+);
+
+create table airplane(
+
+);
+
+create table flight(
+
+);
+
+create table customer(
+
+);
+
+create table airline_staff(
+
+);
+
+create table admin(
+
+);
+
+create table trip(
+
+);
+
+create table ticket(
+
 );
